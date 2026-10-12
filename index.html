@@ -45,17 +45,16 @@
 
     /* 頂部品牌標識 */
     .brand {
-      display: inline-flex;
-      align-items: center;
+      display: flex;
       justify-content: center;
-      background: var(--white);
-      color: var(--pink);
-      font-size: 38px;
-      font-weight: 900;
-      letter-spacing: -2px;
-      padding: 5px 22px 8px;
-      border-radius: 16px;
-      margin-bottom: 22px;
+      margin-bottom: 15px;
+    }
+
+    .brand img {
+      width: 280px;
+      height: auto;
+      max-width: 100%;
+      object-fit: contain;
     }
 
     .brand-subtitle {
@@ -233,10 +232,6 @@
         padding: 18px;
       }
 
-      .brand {
-        font-size: 34px;
-      }
-
       .card {
         padding: 30px 22px 24px;
         border-radius: 24px;
@@ -265,7 +260,7 @@
 <body>
   <main class="page">
 
-    <div class="brand">ibon</div>
+    <div class="brand"><img src="ibon售票系統圖標.png" alt="ibon售票系統圖標"></div>
 
     <p class="brand-subtitle">
       MAMAMOO 2026 TAIPEI CONCERT TICKETING
