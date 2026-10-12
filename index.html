@@ -139,11 +139,11 @@
       }
     }
 
-    /* 等候人數 */
+    /* 等候人數&時間 */
     .note {
       color: var(--muted);
       font-size: 13px;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .queue-number {
@@ -155,7 +155,7 @@
       margin-bottom: 6px;
     }
 
-    .people-unit {
+    .unit {
       font-size: 17px;
       font-weight: 500;
     }
@@ -226,50 +226,16 @@
       line-height: 1.8;
     }
 
-    /* 手機版 */
-    @media (max-width: 480px) {
-      body {
-        padding: 18px;
-      }
-
-      .card {
-        padding: 30px 22px 24px;
-        border-radius: 24px;
-      }
-
-      h1 {
-        font-size: 21px;
-      }
-
-      .description {
-        font-size: 13px;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        animation-duration: 0.01ms !important;
-        transition-duration: 0.01ms !important;
-      }
-    }
   </style>
 </head>
 
 <body>
   <main class="page">
-
     <div class="brand"><img src="ibon售票系統圖標.png" alt="ibon售票系統圖標"></div>
-
-    <p class="brand-subtitle">
-      MAMAMOO 2026 TAIPEI CONCERT TICKETING
-    </p>
+    <p class="brand-subtitle">MAMAMOO 2026 TAIPEI CONCERT TICKETING</p>
 
     <section class="card">
-
       <div class="status-tag">● 系統等候中</div>
-
       <h1>正在排隊進入網頁中</h1>
 
       <p class="description">
@@ -286,23 +252,20 @@
       <p class="note">目前等候人數</p>
 
       <div class="queue-number">
-        <span id="queueNumber">12,846</span>
-        <span class="people-unit">人</span>
+        <span>12,846</span>
+        <span class="unit">人</span>
       </div>
 
-      <p class="note"><br>預計進入時間</p>
+      <p class="note">預計進入時間</p>
 
       <div class="queue-number">
-        <span id="queueTime">12</span>
-        <span class="people-unit">點</span>
-                <span id="queueTime">12</span>
-        <span class="people-unit">分</span>
+        <span>12</span>
+        <span class="unit">點</span>
+                <span>12</span>
+        <span class="unit">分</span>
       </div>
       
-
-      <p class="note">
-        <br>您已進入購票等候序列
-      </p>
+      <p class="note">您已進入購票等候序列</p>
 
       <div class="progress-header">
         <span class="progress-title">排隊進度</span>
