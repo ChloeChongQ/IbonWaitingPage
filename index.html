@@ -141,7 +141,7 @@
     }
 
     /* 等候人數 */
-    .queue-label {
+    .note {
       color: var(--muted);
       font-size: 13px;
       margin-bottom: 8px;
@@ -159,12 +159,6 @@
     .people-unit {
       font-size: 17px;
       font-weight: 500;
-    }
-
-    .queue-note {
-      font-size: 12px;
-      color: var(--muted);
-      margin-bottom: 28px;
     }
 
     /* 進度條 */
@@ -294,15 +288,24 @@
         </div>
       </div>
 
-      <p class="queue-label">目前等候人數</p>
+      <p class="note">目前等候人數</p>
 
       <div class="queue-number">
         <span id="queueNumber">12,846</span>
         <span class="people-unit">人</span>
       </div>
 
-      <p class="queue-note" id="queueNote">
-        您已進入購票等候序列
+            <p class="note"><br>預計進入時間</p>
+
+      <div class="queue-number">
+        <span id="queueTime">12</span>
+        <span class="people-unit">點</span>
+                <span id="queueTime">12</span>
+        <span class="people-unit">分</span>
+      </div>
+
+      <p class="note">
+        <br>您已進入購票等候序列
       </p>
 
       <div class="progress-header">
